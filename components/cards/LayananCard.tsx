@@ -8,7 +8,7 @@ const adlamDisplay = Inter({
 
 export default async function LayananCard({text} : {text : string}) {
     return(
-        <main className="w-64 h-64 flex flex-col shadow-lg overflow-hidden rounded-sm hover:scale-105 transition-all duration-300 ease-in-out">
+        <main className="w-[270px] h-[270px] flex flex-col shadow-lg overflow-hidden rounded-sm hover:scale-105 transition-all duration-300 ease-in-out">
             <section className="w-full h-2/3 border-b border-slate-200 rounded-b-sm overflow-hidden">
                 <Image
                     src={"/jumb-1.jpg"}

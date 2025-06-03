@@ -51,15 +51,15 @@ export default function Footer() {
                     </li>
                     <li>
                         <Link href={'https://wa.link/3g1oh9'} className="flex gap-2">
-                            <SiGmail size={20}/>
-                            <p className={`${inter.className} text-sm cursor-pointer hover:text-(--secondaryRed)`}>jokiinAja@gmail.com</p>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={'https://wa.link/3g1oh9'} className="flex gap-2">
                             <FaWhatsapp size={20}/>
                             <p className={`${inter.className} text-sm cursor-pointer hover:text-(--secondaryRed)`}>+628123123123</p>
                         </Link>
+                    </li>
+                    <li>
+                        <h1 className="flex gap-2">
+                            <SiGmail size={20}/>
+                            <p className={`${inter.className} text-sm hover:text-(--secondaryRed)`}>jokiinAja@gmail.com</p>
+                        </h1>
                     </li>
                 </ul>
             </section>

@@ -35,9 +35,10 @@ export default function Navbar() {
     <nav className={`${scroll ? "bg-(--secondaryRed) text-white" : "bg-transparent"} transition-all duration-300 ease-in-out w-full h-20 flex items-center justify-between px-16 fixed z-50`}>
       <Link
         href="/"
-        className={`${adlamDisplay.className} ${scroll ? "hover:text-white text-slate-50" : "hover:text-(--secondaryRed)"} text-4xl font-bold`}
+        className={`${adlamDisplay.className} ${scroll ? "hover:text-white text-slate-50" : "hover:text-(--secondaryRed)"} text-4xl font-bold transition-all duration-300 ease-in-out`}
       >
-        JokiinAja
+        Jokiin
+        <span className={`${scroll ? "text-white": "text-(--secondaryRed)"}`}>Aja</span>
       </Link>
       <ul className={`${inter.className} flex gap-6`}>
         <li>
@@ -69,26 +70,25 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="/FAQ"
+            href="/faq"
             className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
-            ${pathname === "/FAQ" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
+            ${pathname === "/faq" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             FAQ
           </Link>
         </li>
         <li>
           <Link
-            href="/syaratKetentuan"
-            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
-            ${pathname === "/syaratKetentuan" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
+            href="/login"
+            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"}`}
           >
-            Syarat & Ketentuan
+            Login
           </Link>
         </li>
       </ul>
-      <button className={`${poppins.className} ${scroll ? "bg-slate-100 text-(--primaryRed) hover:bg-(--quartenaryRed)" : "bg-(--secondaryRed) text-white hover:bg-(--primaryRed) "} px-6 py-2 rounded-md hover:cursor-pointer`}>
+      <Link href={'https://wa.link/3g1oh9'} className={`${poppins.className} ${scroll ? "bg-slate-100 text-(--primaryRed) hover:bg-(--quartenaryRed)" : "bg-(--secondaryRed) text-white hover:bg-(--primaryRed) "} px-6 py-2 rounded-md hover:cursor-pointer`}>
             Hubungi Kami
-        </button>
+        </Link>
     </nav>
   );
 }

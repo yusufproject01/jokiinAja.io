@@ -7,7 +7,7 @@ const poppins = Poppins({
 })
 
 const inter = Inter({
-    weight: "400",
+    weight: "600",
     subsets: ["latin"],
 })
 
@@ -27,7 +27,7 @@ export default function TestimonialCard({responseTestimonial} : {responseTestimo
                         className="w-16 h-16 object-cover rounded-full"
                     />
                 </div>
-                <h1 className={`${inter.className} w-1/2 h-full flex items-center justify-center text-lg`}>Anonymous</h1>
+                <h1 className={`${inter.className} w-1/2 h-full flex items-center justify-center text-lg text-slate-500`}>Anonymous</h1>
             </section>
         </main>
     )

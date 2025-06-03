@@ -9,13 +9,13 @@ const adlamDisplay = ADLaM_Display({
 
 export default function LayananPage() {
   return (
-    <main className="w-full h-screen py-12 bg-(--bgPage) flex flex-col justify-center items-center">
+    <main className="w-full h-auto py-28 bg-(--bgPage) flex flex-col justify-center items-center">
       <section className="w-full flex justify-center items-center">
         <h1 className={`${adlamDisplay.className} text-4xl font-bold`}>
           Layanan <span className="text-(--secondaryRed)">JokiinAja</span>
         </h1>
       </section>
-      <section className="w-full h-auto grid grid-cols-4 justify-items-center gap-4 py-8">
+      <section className="w-full h-auto grid grid-cols-4 justify-items-center gap-x-2 gap-y-10 py-6">
         {TextCardLayanan.map((item, index) => (
           <LayananCard key={index} text={item.text} />
         ))}

@@ -11,12 +11,12 @@ const adlamDisplay = ADLaM_Display({
 
 export default function ServicesComponent() {
   return (
-    <main className="w-full h-auto py-12 bg-(--bgPage) flex flex-col justify-center items-center">
+    <main className="w-full h-auto py-20 bg-(--bgPage) flex flex-col justify-center items-center">
       <section className="w-full flex justify-center items-center">
         <TitleCenter TitleContent="Layanan" BrandTitle="JokiinAja" />
       </section>
       <section className="w-full h-auto grid grid-cols-4 justify-items-center gap-4 pt-8 pb-20">
-        {TextCardLayanan.map((item, index) => (
+        {TextCardLayanan.slice(0, 4).map((item, index) => (
           <LayananCard key={index} text={item.text} />
         ))}
       </section>
