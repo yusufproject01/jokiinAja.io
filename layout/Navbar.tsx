@@ -2,6 +2,7 @@
 
 import { ADLaM_Display, Inter, Poppins } from "next/font/google";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const adlamDisplay = ADLaM_Display({
@@ -22,6 +23,7 @@ const poppins = Poppins({
 
 export default function Navbar() {
     const [scroll, setScroll] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
       window.addEventListener("scroll", () => {
@@ -30,7 +32,7 @@ export default function Navbar() {
     }, []);
     
   return (
-    <nav className={`${scroll ? "bg-(--secondaryRed) text-white border-b-2 border-(--tertiaryRed)" : "bg-transparent"} transition-all duration-300 ease-in-out w-full h-20 flex items-center justify-between px-16 fixed z-50`}>
+    <nav className={`${scroll ? "bg-(--secondaryRed) text-white" : "bg-transparent"} transition-all duration-300 ease-in-out w-full h-20 flex items-center justify-between px-16 fixed z-50`}>
       <Link
         href="/"
         className={`${adlamDisplay.className} ${scroll ? "hover:text-white text-slate-50" : "hover:text-(--secondaryRed)"} text-4xl font-bold`}
@@ -41,39 +43,44 @@ export default function Navbar() {
         <li>
           <Link
             href="/"
-            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} text-base hover:font-bold `}
+            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
+            ${pathname === "/" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             Home
           </Link>
         </li>
         <li>
           <Link
-            href="/"
-            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} text-base hover:font-bold `}
+            href="/layanan"
+            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
+            ${pathname === "/layanan" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             Layanan
           </Link>
         </li>
         <li>
           <Link
-            href="/"
-            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} text-base hover:font-bold `}
+            href="/order"
+            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
+            ${pathname === "/order" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             Order
           </Link>
         </li>
         <li>
           <Link
-            href="/"
-            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} text-base hover:font-bold `}
+            href="/FAQ"
+            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
+            ${pathname === "/FAQ" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             FAQ
           </Link>
         </li>
         <li>
           <Link
-            href="/"
-            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} text-base hover:font-bold `}
+            href="/syaratKetentuan"
+            className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
+            ${pathname === "/syaratKetentuan" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             Syarat & Ketentuan
           </Link>

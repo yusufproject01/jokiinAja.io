@@ -1,9 +1,15 @@
-import Image from "next/image";
+import FAQ from "@/content/FAQ";
+import JumbotronComponent from "@/content/JumbotronComponent";
+import ServicesComponent from "@/content/ServicesComponent";
+import Testimonial from "@/content/Testimonial";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen py-96 bg-gradient-to-r from-(--white) to-(--tertiaryRed)">
-      <h1>Home</h1>
+    <main className="w-full h-auto flex flex-col">
+      <JumbotronComponent/>
+      <ServicesComponent/>
+      <Testimonial/>
+      <FAQ/>
     </main>
   );
 }
