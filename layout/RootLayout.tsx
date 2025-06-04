@@ -11,7 +11,7 @@ export default function RootNavbarLayout({
 }>) {
 
   const pathname = usePathname();
-  const disableLayout = pathname === "/login" || pathname === "/register"
+  const disableLayout = pathname === "/sign-in" || pathname === "/sign-in/factor-one" || pathname === "/sign-up" || pathname === "/sign-up/verify-email-address";
   
   
   return (

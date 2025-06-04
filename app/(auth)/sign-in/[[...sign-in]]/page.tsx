@@ -1,13 +1,14 @@
-import BtnBack from "@/components/buttons/Btn-Back";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import BrandFont from "@/Typography/BrandFont";
-import Link from "next/link";
+// import BtnBack from "@/components/buttons/Btn-Back";
+// import { Button } from "@/components/ui/button";
+// import { Input } from "@/components/ui/input";
+// import BrandFont from "@/Typography/BrandFont";
+import { SignIn } from "@clerk/nextjs";
+// import Link from "next/link";
 
-export default function LoginPage() {
+export default function SignInPage() {
     return (
         <main className="w-full h-screen flex flex-col gap-4 justify-center items-center bg-gradient-to-r from-(--white) to-(--tertiaryRed)">
-            <section className="w-80 h-auto flex flex-col gap-y-4 justify-center items-center py-8 px-4 bg-white rounded-sm shadow-md">
+            {/* <section className="w-80 h-auto flex flex-col gap-y-4 justify-center items-center py-8 px-4 bg-white rounded-sm shadow-md">
                 <BrandFont/>
                 <form className="gap-y-4 flex flex-col">
                     <Input 
@@ -26,7 +27,8 @@ export default function LoginPage() {
             </section>
             <div className="w-80 flex justify-start">
                 <BtnBack/>
-            </div>
+            </div> */}
+            <SignIn/>
         </main>
     )
 }

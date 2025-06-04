@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ADLaM_Display, Inter, Poppins } from "next/font/google";
 import { TextCardJumbotron } from "@/lib/datas/jumbotron";
+import Link from "next/link";
 
 const adlamDisplay = ADLaM_Display({
     weight: "400",
@@ -33,14 +34,14 @@ export default function JumbotronComponent() {
                         {item.descriptionText}
                     </p>
                     <div className={`${poppins.className} w-full flex items-center justify-between`}>
-                        <button className="flex justify-center items-center bg-(--secondaryRed) hover:bg-(--tertiaryRed) 
+                        <Link href="/order" className="flex justify-center items-center bg-(--secondaryRed) hover:bg-(--tertiaryRed) 
                         text-white font-bold w-44 h-12 py-4 px-6 cursor-pointer rounded text-base">
                             Order
-                        </button>
-                        <button className="flex justify-center items-center border border-(--secondaryRed) hover:bg-(--secondaryRed) 
+                        </Link>
+                        <Link href="/layanan" className="flex justify-center items-center border border-(--secondaryRed) hover:bg-(--secondaryRed) 
                         hover:text-white text-(--secondaryRed) font-bold w-44 h-12 py-4 px-6 cursor-pointer rounded text-base">
                             Lihat Layanan
-                        </button>
+                        </Link>
                     </div>
                 </div>
             ))}
