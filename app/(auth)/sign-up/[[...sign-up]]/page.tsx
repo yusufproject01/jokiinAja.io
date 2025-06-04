@@ -1,9 +1,4 @@
-import BtnBack from "@/components/buttons/Btn-Back";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import BrandFont from "@/Typography/BrandFont";
 import { SignUp } from "@clerk/nextjs";
-import Link from "next/link";
 
 export default function SignUpPage() {
     return (

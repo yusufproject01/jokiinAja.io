@@ -1,13 +1,8 @@
-import { ADLaM_Display } from "next/font/google";
 import LayananCard from "../components/cards/LayananCard";
 import { TextCardLayanan } from "@/lib/datas/layanan";
 import BtnLayanan from "../components/buttons/Btn-Layanan";
 import { TitleCenter } from "@/Typography/TitleCenter";
 
-const adlamDisplay = ADLaM_Display({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 export default function ServicesComponent() {
   return (

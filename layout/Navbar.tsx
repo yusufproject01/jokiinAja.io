@@ -135,23 +135,8 @@ export default function Navbar() {
         </Button>
       </SignedOut>
       <SignedIn>
-        {/* <Link
-          href={"https://wa.link/3g1oh9"}
-          className={`${poppins.className} ${
-            scroll
-              ? "bg-slate-100 text-(--primaryRed) hover:bg-(--quartenaryRed)"
-              : "bg-(--secondaryRed) text-white hover:bg-(--primaryRed) "
-          } px-6 py-2 rounded-md hover:cursor-pointer`}
-        >
-          Hubungi Kami
-        </Link> */}
           <UserButton showName afterSwitchSessionUrl="/"/>
       </SignedIn>
-      {/* <SignedOut>
-        <SignInButton>
-          <Button>Sign In</Button>
-        </SignInButton>
-      </SignedOut> */}
     </nav>
   );
 }
