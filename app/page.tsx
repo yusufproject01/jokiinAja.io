@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import FAQ from "@/content/FAQ";
 import JumbotronComponent from "@/content/JumbotronComponent";
 import ServicesComponent from "@/content/ServicesComponent";

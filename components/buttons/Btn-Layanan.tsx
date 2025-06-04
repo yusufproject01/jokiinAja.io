@@ -12,7 +12,7 @@ export default function BtnLayanan() {
     return (
         <button
             onClick={handleRoute}
-            className="w-44 h-10 rounded-sm outline-1 outline-(--secondaryRed) 
+            className="w-44 h-10 rounded-sm border border-(--secondaryRed) 
             hover:bg-(--secondaryRed) text-(--secondaryRed) hover:text-white 
             cursor-pointer transition-all duration-300 ease-in-out">
             Lihat Semua

@@ -1,5 +1,6 @@
 "use client";
 
+import SmoothLink from "@/features/SmoothLinks";
 import { ADLaM_Display, Inter, Poppins } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -33,49 +34,49 @@ export default function Navbar() {
     
   return (
     <nav className={`${scroll ? "bg-(--secondaryRed) text-white" : "bg-transparent"} transition-all duration-300 ease-in-out w-full h-20 flex items-center justify-between px-16 fixed z-50`}>
-      <Link
-        href="/"
+      <SmoothLink
+        to="/"
         className={`${adlamDisplay.className} ${scroll ? "hover:text-white text-slate-50" : "hover:text-(--secondaryRed)"} text-4xl font-bold transition-all duration-300 ease-in-out`}
       >
         Jokiin
         <span className={`${scroll ? "text-white": "text-(--secondaryRed)"}`}>Aja</span>
-      </Link>
+      </SmoothLink>
       <ul className={`${inter.className} flex gap-6`}>
         <li>
-          <Link
-            href="/"
+          <SmoothLink
+            to="/"
             className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
             ${pathname === "/" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             Home
-          </Link>
+          </SmoothLink>
         </li>
         <li>
-          <Link
-            href="/layanan"
+          <SmoothLink
+            to="/layanan"
             className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
             ${pathname === "/layanan" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             Layanan
-          </Link>
+          </SmoothLink>
         </li>
         <li>
-          <Link
-            href="/order"
+          <SmoothLink
+            to="/order"
             className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
             ${pathname === "/order" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             Order
-          </Link>
+          </SmoothLink>
         </li>
         <li>
-          <Link
-            href="/faq"
+          <SmoothLink
+            to="/faq"
             className={`${scroll ? "hover:text-white text-slate-50" : "text-black hover:text-(--secondaryRed)"} 
             ${pathname === "/faq" ? "hover:text-white text-slate-50 bg-(--secondaryRed) font-bold py-2 px-4 rounded-sm" : "text-black hover:text-(--secondaryRed)"} text-base`}
           >
             FAQ
-          </Link>
+          </SmoothLink>
         </li>
         <li>
           <Link
