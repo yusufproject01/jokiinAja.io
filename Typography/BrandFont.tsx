@@ -7,7 +7,7 @@ const adlamDisplay = ADLaM_Display({
 
 export default function BrandFont() {
     return (
-        <h1 className={`${adlamDisplay.className} text-4xl font-bold`}>
+        <h1 className={`${adlamDisplay.className} sm:text-4xl text-2xl font-bold`}>
             Jokiin
             <span className='text-(--secondaryRed)'>Aja</span>
         </h1>

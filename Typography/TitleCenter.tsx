@@ -7,7 +7,7 @@ const adlamDisplay = ADLaM_Display({
 
 export function TitleCenter({TitleContent, BrandTitle} : {TitleContent : string, BrandTitle? : any}) {
   return (
-    <h1 className={`${adlamDisplay.className} text-4xl font-bold`}>
+    <h1 className={`${adlamDisplay.className} sm:text-4xl text-3xl font-bold`}>
         {TitleContent} <span className="text-(--secondaryRed)">{BrandTitle}</span>
     </h1>
   );

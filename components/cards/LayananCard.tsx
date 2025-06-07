@@ -8,7 +8,7 @@ const adlamDisplay = Inter({
 
 export default async function LayananCard({text} : {text : string}) {
     return(
-        <main className="w-[270px] h-[270px] flex flex-col shadow-lg overflow-hidden rounded-sm hover:scale-105 transition-all duration-300 ease-in-out">
+        <main className="sm:w-[270px] w-[150px] sm:h-[270px] h-[150px] flex flex-col shadow-lg overflow-hidden rounded-sm hover:scale-105 transition-all duration-300 ease-in-out">
             <section className="w-full h-2/3 border-b border-slate-200 rounded-b-sm overflow-hidden">
                 <Image
                     src={"/jumb-1.jpg"}
@@ -18,7 +18,7 @@ export default async function LayananCard({text} : {text : string}) {
                     className="w-full h-full object-cover"
                 />
             </section>
-            <section className={`${adlamDisplay.className} w-full h-1/3 flex justify-center items-center text-2xl`}>{text}</section>
+            <section className={`${adlamDisplay.className} w-full h-1/3 flex justify-center items-center sm:text-2xl text-lg`}>{text}</section>
         </main>
     )
 }

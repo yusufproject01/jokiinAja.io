@@ -30,12 +30,12 @@ export default function AccordionFAQ({
   return (
     <button
       onClick={handleScroll}
-      className="bg-white max-w-xl w-full h-auto py-2 border border-slate-300 shadow-sm 
+      className="bg-white max-w-xl w-full h-auto sm:py-2 py-4 border border-slate-300 shadow-sm 
         px-4 rounded-sm cursor-pointer flex flex-col items-center justify-center 
         transition-all duration-500 ease-in-out"
     >
       <div className="w-full flex items-center justify-between">
-        <h1 className={`${poppins.className} text-base font-bold`}>
+        <h1 className={`${poppins.className} sm:text-base text-sm text-start font-bold`}>
           {TitleQuestion}
         </h1>
         {scroll ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20} />}
@@ -44,11 +44,11 @@ export default function AccordionFAQ({
       {/* Selalu render jawaban, tapi animasikan dengan height dan opacity */}
       <div
         className={`overflow-hidden w-full transition-all duration-500 ease-in-out 
-          ${scroll ? "max-h-40 opacity-100 py-2" : "max-h-0 opacity-0 py-0"}
+          ${scroll ? "sm:max-h-40 max-h-28 opacity-100 py-2" : "max-h-0 opacity-0 py-0"}
         `}
       >
         <p
-          className={`${inter.className} text-sm text-justify w-full px-2`}
+          className={`${inter.className} sm:text-sm text-xs text-justify w-full px-2`}
         >
           {Answer}
         </p>
