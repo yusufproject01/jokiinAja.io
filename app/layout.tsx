@@ -28,31 +28,25 @@ export default async function RootLayout({
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <head>
-          <meta title="JokiinAja" />
           <title>JokiinAja</title>
           <meta property="og:title" content="JokiinAja" />
-          <meta
-            property="og:description"
-            content="Website Jokiin Tugas"
-          />
+          <meta property="og:description" content="Website Jokiin Tugas" />
           <meta
             property="og:image"
-            content="/favicon-icon/JokiinAja.png"
+            content="https://domainkamu.com/favicon-icon/JokiinAja.png"
           />
-          <meta property="og:url" content="/favicon-icon/JokiinAja.png" />
-          <meta property="og:type" content="JokiinAja" />
+          <meta property="og:url" content="https://domainkamu.com" />
+          <meta property="og:type" content="website" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="JokiinAja" />
-          <meta
-            name="twitter:description"
-            content="Website Jokiin Tugas."
-          />
+          <meta name="twitter:description" content="Website Jokiin Tugas." />
           <meta
             name="twitter:image"
-            content="/favicon-icon/JokiinAja.png"
+            content="https://domainkamu.com/favicon-icon/JokiinAja.png"
           />
         </head>
+
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
         >
