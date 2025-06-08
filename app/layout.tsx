@@ -29,22 +29,20 @@ export default async function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <head>
           <title>JokiinAja</title>
+          <link rel="icon" href="/favicon-icon/JokiinAja.png" type="image/png" />
+
+          {/* <!-- Open Graph (Facebook, WA, dll) --> */}
           <meta property="og:title" content="JokiinAja" />
           <meta property="og:description" content="Website Jokiin Tugas" />
-          <meta
-            property="og:image"
-            content="https://domainkamu.com/favicon-icon/JokiinAja.png"
-          />
-          <meta property="og:url" content="https://domainkamu.com" />
+          <meta property="og:image" content="https://jokiinaja.vercel.app/favicon-icon/JokiinAja.png" />
+          <meta property="og:url" content="https://jokiinaja.vercel.app" />
           <meta property="og:type" content="website" />
 
+          {/* <!-- Twitter Card --> */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="JokiinAja" />
-          <meta name="twitter:description" content="Website Jokiin Tugas." />
-          <meta
-            name="twitter:image"
-            content="https://domainkamu.com/favicon-icon/JokiinAja.png"
-          />
+          <meta name="twitter:description" content="Website Jokiin Tugas" />
+          <meta name="twitter:image" content="https://jokiinaja.vercel.app/favicon-icon/JokiinAja.png" />
         </head>
 
         <body
