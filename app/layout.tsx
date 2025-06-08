@@ -34,15 +34,15 @@ export default async function RootLayout({
           {/* <!-- Open Graph (Facebook, WA, dll) --> */}
           <meta property="og:title" content="JokiinAja" />
           <meta property="og:description" content="Website Jokiin Tugas" />
-          <meta property="og:image" content="https://jokiinaja.vercel.app/favicon-icon/JokiinAja.png" />
-          <meta property="og:url" content="https://jokiinaja.vercel.app" />
+          <meta property="og:image" content="https://jokiin-aja-io.vercel.app/favicon-icon/JokiinAja.png" />
+          <meta property="og:url" content="https://jokiin-aja-io.vercel.app" />
           <meta property="og:type" content="website" />
 
           {/* <!-- Twitter Card --> */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="JokiinAja" />
           <meta name="twitter:description" content="Website Jokiin Tugas" />
-          <meta name="twitter:image" content="https://jokiinaja.vercel.app/favicon-icon/JokiinAja.png" />
+          <meta name="twitter:image" content="https://jokiin-aja-io.vercel.app/favicon-icon/JokiinAja.png" />
         </head>
 
         <body
