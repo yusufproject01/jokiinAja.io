@@ -30,12 +30,12 @@ export default function AccordionFAQ({
   return (
     <button
       onClick={handleScroll}
-      className="bg-white max-w-xl w-full h-auto sm:py-2 py-4 border border-slate-300 shadow-sm 
+      className="bg-white max-w-xl w-full h-auto sm:py-2 py-2 border border-slate-300 shadow-sm 
         px-4 rounded-sm cursor-pointer flex flex-col items-center justify-center 
         transition-all duration-500 ease-in-out"
     >
       <div className="w-full flex items-center justify-between">
-        <h1 className={`${poppins.className} sm:text-base text-sm text-start font-bold`}>
+        <h1 className={`${poppins.className} sm:text-base text-xs text-start font-bold`}>
           {TitleQuestion}
         </h1>
         {scroll ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20} />}

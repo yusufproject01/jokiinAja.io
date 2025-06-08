@@ -34,6 +34,7 @@ export default async function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <head>
           <meta title="JokiinAja" />
+          <link rel="icon" href="/favicon-icon/JokiinAja-3.png" />
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}

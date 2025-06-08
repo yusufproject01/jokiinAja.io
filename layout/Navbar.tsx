@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import SmoothLink from "@/features/SmoothLinks";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { ADLaM_Display, Inter, Poppins } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
