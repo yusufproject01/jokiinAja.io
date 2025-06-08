@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import RootNavbarLayout from "@/layout/RootLayout";
-import {
-  ClerkProvider,
-} from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,15 +24,34 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  
-  
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <head>
           <meta title="JokiinAja" />
-          <link rel="icon" href="/favicon-icon/JokiinAja-3.png" />
+          <title>JokiinAja</title>
+          <meta property="og:title" content="JokiinAja" />
+          <meta
+            property="og:description"
+            content="Website Jokiin Tugas"
+          />
+          <meta
+            property="og:image"
+            content="/favicon-icon/JokiinAja.png"
+          />
+          <meta property="og:url" content="/favicon-icon/JokiinAja.png" />
+          <meta property="og:type" content="JokiinAja" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="JokiinAja" />
+          <meta
+            name="twitter:description"
+            content="Website Jokiin Tugas."
+          />
+          <meta
+            name="twitter:image"
+            content="/favicon-icon/JokiinAja.png"
+          />
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
